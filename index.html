@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Interactive Fixed Navigation</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav" id="siteNav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="logo">PC</div>
+      <div>
+        <div>PropChain</div>
+        <div class="muted" style="font-size:12px;opacity:.6">Web dev demo</div>
+      </div>
+    </div>
+
+    <ul class="menu" id="menu" role="menubar">
+      <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+      <li><a href="#features" class="nav-link" data-target="features">Features</a></li>
+      <li><a href="#pricing" class="nav-link" data-target="pricing">Pricing</a></li>
+      <li><a href="#contact" class="nav-link cta" data-target="contact">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hambtn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <svg width="20" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="2" rx="1" y="0" fill="currentColor"></rect>
+        <rect width="24" height="2" rx="1" y="6" fill="currentColor"></rect>
+        <rect width="24" height="2" rx="1" y="12" fill="currentColor"></rect>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <section id="home" class="section home">
+    <div class="demo-card">
+      <h1>Interactive Fixed Navigation</h1>
+      <p class="muted">Scroll down to see the nav change. Hover menu items for micro-interactions. Resize to see the mobile menu.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="demo-card">
+      <h2>About</h2>
+      <p class="muted">Explain your project or site here.</p>
+    </div>
+  </section>
+
+  <section id="features" class="section features">
+    <div class="demo-card">
+      <h2>Features</h2>
+      <p class="muted">List of features and interactive elements.</p>
+    </div>
+  </section>
+
+  <section id="pricing" class="section pricing">
+    <div class="demo-card">
+      <h2>Pricing</h2>
+      <p class="muted">Pricing plans and CTA.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="demo-card">
+      <h2>Contact</h2>
+      <p class="muted">Contact form or contact details.</p>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
